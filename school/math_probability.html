@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="shortcut icon" href="images/Screen Shot 2020-09-10 at 3.34.27 pm.png" type="image/x-icon" />
+
+</html>
+
+<head>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 15px;
+    }
+
+
+    body {
+      margin: 0;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+
+    }
+
+    li {
+      float: left;
+    }
+
+    li a,
+    .dropbtn {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: #4CAF50;
+    }
+
+    li.dropdown {
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+
+    }
+
+    li a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>probability</title>
+  <link rel="stylesheet" type="text/css" href="style1.css" />
+</head>
+
+<body>
+  <ul>
+    <li class="dropdown"><a href="index.html" class="dropbtn">Home</a></li>
+    <li class="dropdown">
+      <a class="active" href="math.html" class="dropbtn">Math</a>
+      <div class="dropdown-content">
+        <a href="math_probability.html">probability</a>
+        <a href="#">link2</a>
+      </div>
+    <li class="dropdown">
+      <a href="english.html" class="dropbtn">English</a>
+      <div class="dropdown-content">
+        <a href="romeoandjuliet.html">Romeo and Juliet</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    <li class="dropdown">
+      <a href="science.html" class="dropbtn">Scinece</a>
+      <div class="dropdown-content">
+        <a href="chem.html">Chemistry</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+    <li class="dropdown">
+      <a href="hass.html" class="dropbtn">H.A.S.S</a>
+      <div class="dropdown-content">
+        <a href="history.html">History</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+
+    <li class="dropdown">
+      <a href="woodwork.html" class="dropbtn">Woodwork</a>
+      <div class="dropdown-content">
+        <a href="boxdf.html">Box design folio</a>
+        <a href="itu.html">Indigenous Australians Timber Uses </a>
+        <a href="#">Link 3</a>
+      </div>
+    <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Photography</a>
+      <div class="dropdown-content">
+        <a href="#">Task 1</a>
+        <a href=" Ptask2.html">Task 2</a>
+      </div>
+      <li class="dropdown">
+        <a href="helth.html" class="dropbtn">Helth</a>
+        <div class="dropdown-content">
+            <a href="#">Task 1</a>
+            <a href="#">Task 2</a>
+        </div>
+
+    </li>
+  </ul>
+  <center>
+    <h1>probability</h1>
+    <h2>8/9/2020</h2>
+    <h2>Two-Stage Experiments<br>
+      (Two-Way Tables vs. Arrays)</h2>
+    <p1>DefN of Array: An array is a n-dimensional, orderd, arrangement involving rows and columns.</p1>
+    <br>
+    <br>
+    <p1>The outcom of a two-stage probability experiments are shown as an ordered pair (A,B).</p1>
+    <br>
+    <table style="widows: 50%">
+      <tr>
+        <th> </th>
+        <th>E</th>
+        <th>Q</th>
+        <th>S</th>
+        <th>T</th>
+        <th>U</th>
+      </tr>
+      <tr>
+        <th>A</th>
+        <th>(A,E)</th>
+        <th>(A,Q)</th>
+        <th>(A,S)</th>
+        <th>(A,T)</th>
+        <th>(A,U)</th>
+      </tr>
+      <tr>
+        <th>I</th>
+        <td>(I,E)</td>
+        <th>(I,Q)</th>
+        <th>(I,S)</th>
+        <th>(I,T)</th>
+        <th>(I,U)</th>
+      </tr>
+      <tr>
+        <th>O</th>
+        <th>(O,E)</th>
+        <th>(O,Q)</th>
+        <th>(O,S)</th>
+        <th>(O,T)</th>
+        <th>(O,U)</th>
+      </tr>
+      <tr>
+        <td>P</td>
+        <th>(P,E)</th>
+        <th>(P,Q)</th>
+        <th>(P,S)</th>
+        <th>(P,T)</th>
+        <th>(P,U)</th>
+      </tr>
+      <tr>
+        <th>R</th>
+        <td>(R,E)</td>
+        <th>(R,Q)</th>
+        <th>(R,S)</th>
+        <th>(R,T)</th>
+        <th>(R,U)</th>
+      </tr>
+    </table>
+    <h1>The complement, union and intersection.</h1>
+    <p2>12B Q8.</p2>
+    <table>
+      <tr>
+        <td>Eye color &darr; Hair color &rarr;</td>
+        <th>Fair</th>
+        <th>Brown</th>
+        <th>Red</th>
+        <th>black</th>
+      </tr>
+      <tr>
+        <th>blue</th>
+        <th>25</th>
+        <th>9</th>
+        <th>6</th>
+        <th>18</th>
+      </tr>
+      <tr>
+        <th>Brown</th>
+        <th>16</th>
+        <th>16</th>
+        <th>18</th>
+        <th>22</th>
+      </tr>
+      <tr>
+        <th>green</th>
+        <th>15</th>
+        <th>17</th>
+        <th>22</th>
+        <th>16</th>
+      </tr>
+    </table>
+
+    <p1>What is the probability that a person chosen at random from this group has:</p1>
+    <br>
+    <p1>A) Blue eyes?<br>29/100</p1>
+    <br>
+    <br>
+    <p1>B) Red hair?<br>23/100</p1>
+    <br>
+    <br>
+    <p1>C) fair or brown hair?<br>49/100</p1>
+    <br>
+    <br>
+    <p1>D) blue or brown eyes?<br>65/100</p1>
+    <br>
+    <br>
+    <p1>E) red hair and green eyes?<br>11/100</p1>
+    <br>
+    <br>
+    <p1>F) eyes that are not green?<br>65/100</p1>
+    <br>
+    <br>
+    <p1>G) hair that is not red?<br>77/100</p1>
+    <br>
+    <br>
+    <p1>H) eyes that are not blue or hair that is not fair?<br>111/200</p1>
+    <br>
+    <br>
+    <br>
+    <h2>12D</h2>
+    <p>Question 1</p>
+    <table>
+      <tr>
+        <th>10-cent coin &darr; Die &rarr;</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+      </tr>
+      <tr>
+        <th>H</th>
+        <th>(H,1)</th>
+        <th>(H,2)</th>
+        <th>(H,3)</th>
+        <th>(H,4)</th>
+        <th>(H,5)</th>
+        <th>(H,6)</th>
+      </tr>
+      <tr>
+        <th>T</th>
+        <th>(T,1)</th>
+        <th>(T,2)</th>
+        <th>(T,3)</th>
+        <th>(T,4)</th>
+        <th>(T,5)</th>
+        <th>(T,6)</th>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <p>Question 2</p>
+    <table>
+      <tr>
+        <th>1st bag &darr; 2nd bag &rarr;</th>
+        <th>R</th>
+        <th>R</th>
+        <th>Y</th>
+        <th>B</th>
+      </tr>
+      <tr>
+        <th>R</th>
+        <th>(R,R)</th>
+        <th>(R,R)</th>
+        <th>(R,Y)</th>
+        <th>(R,B)</th>
+      </tr>
+      <tr>
+        <th>Y</th>
+        <th>(Y,R)</th>
+        <th>(Y,R)</th>
+        <th>(Y,Y)</th>
+        <th>(Y,B)</th>
+      </tr>
+      <tr>
+        <th>Y</th>
+        <th>(Y,R)</th>
+        <th>(Y,R)</th>
+        <th>(Y,Y)</th>
+        <th>(Y,B)</th>
+      </tr>
+      <tr>
+        <th>B</th>
+        <th>(B,R)</th>
+        <th>(B,R)</th>
+        <th>(B,Y)</th>
+        <th>(B,B)</th>
+      </tr>
+    </table>
+    <br>
+    <br>
+    <p>Question 3</p>
+    <table>
+      <tr>
+        <td>1st spin &darr; 2nd spin &rarr;</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>2</td>
+        <td>4</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>3</td>
+        <td>6</td>
+        <td>9</td>
+      </tr>
+    </table>
+    <p>Question 4</p>
+    <table>
+      <tr>
+        <th>coin &darr; die &rarr;</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>4</th>
+        <th>5</th>
+        <th>6</th>
+      </tr>
+      <tr>
+        <th>H</th>
+        <th>(H,1)</th>
+        <th>(H,2)</th>
+        <th>(H,3)</th>
+        <th>(H,4)</th>
+        <th>(H,5)</th>
+        <th>(H,6)</th>
+      </tr>
+      <tr>
+        <th>T</th>
+        <th>(T,1)</th>
+        <th>(T,2)</th>
+        <th>(T,3)</th>
+        <th>(T,4)</th>
+        <th>(T,5)</th>
+        <th>(T,6)</th>
+      </tr>
+    </table>
+    <p>The probability of obtaining:<br>
+      A) a head and a six? 1/12<br>
+      B) a head and an even number? 1/4<br>
+      C) a tail? 1/2<br>
+      D) a four? 1/6</p>
+    <p>Question 6</p>
+    <table>
+      <tr>
+        <th>Shelf 2 &darr; Shelf 1 &rarr;</th>
+        <th>S.B</th>
+        <th>S.B</th>
+        <th>S.B</th>
+        <th>T.B</th>
+      </tr>
+      <tr>
+        <th>S.B</th>
+        <th>(S.B,S.B)</th>
+        <th>(S.B,S.B)</th>
+        <th>(S.B,S.B)</th>
+        <th>(S.B,T.B)</th>
+      </tr>
+      <tr>
+        <th>S.B</th>
+        <th>(S.B,S.B)</th>
+        <th>(S.B,S.B)</th>
+        <th>(S.B,S.B)</th>
+        <th>(S.B,T.B)</th>
+      </tr>
+      <tr>
+        <th>T.B</th>
+        <th>(T.B,S.B)</th>
+        <th>(T.B,S.B)</th>
+        <th>(T.B,S.B)</th>
+        <th>(T.B,T.B)</th>
+      </tr>
+      <tr>
+        <th>T.B</th>
+        <th>(T.B,S.B)</th>
+        <th>(T.B,S.B)</th>
+        <th>(T.B,S.B)</th>
+        <th>(T.B,T.B)</th>
+      </tr>
+      <tr>
+        <th>T.B</th>
+        <th>(T.B,S.B)</th>
+        <th>(T.B,S.B)</th>
+        <th>(T.B,S.B)</th>
+        <th>(T.B,T.B)</th>
+      </tr>
+    </table>
+    <p>Find the probability that:<br>
+      A) both books are storybooks? 6/20 or 30%<br>
+      B) Both books are textbooks? 3/20 or 15%</p>
+    <br>
+    <br>
+    <p>Question 7</p>
+    <table>
+      <tr>
+        <th>Aces &darr; Kings &rarr;</th>
+        <th>Clubs</th>
+        <th>Spades</th>
+        <th>Hearts</th>
+        <th>Dimonds</th>
+      </tr>
+      <tr>
+        <th>Clubs</th>
+        <th>(Clubs,Clubs)</th>
+        <th>(Clubs,Spades)</th>
+        <th>(Clubs,Hearts)</th>
+        <th>(Clubs,Dimonds)</th>
+      </tr>
+      <tr>
+        <th>Spades</th>
+        <th>(Spades,Clubs)</th>
+        <th>(Spades,Spades)</th>
+        <th>(Spades,Hearts)</th>
+        <th>(Spades,Dimonds)</th>
+      </tr>
+      <tr>
+        <th>Hearts</th>
+        <th>(Hearts,Clubs)</th>
+        <th>(Hearts,Spades)</th>
+        <th>(Hearts,Hearts)</th>
+        <th>(Hearts,Dimonds)</th>
+      </tr>
+      <tr>
+        <th>Dimonds</th>
+        <th>(Dimonds,Clubs)</th>
+        <th>(Dimonds,Spades)</th>
+        <th>(Dimonds,Hearts)</th>
+        <th>(Dimonds,Dimonds)</th>
+      </tr>
+    </table>
+    <p>Find the probability that the two cards chosen:<br>
+      A) are both black? 4/16<br>B) are both Spades? 1/16<br>
+      C) include at least one black card? 12/16<br>
+      D) are both the same suit? 4/16</p>
+    <br>
+    <br>
+    <p>Question 8</p>
+    <img src="images/Screen Shot 2020-09-09 at 5.58.16 am.png">
+    <p>Find the probability of obtaining:<br>A) two sixes? 1/36<br>B) a total of 7? 6/32<br>C) the same number on both
+      dice? 6/32<br>D) a total less than or equal to 10) 29/32</p>
+    <br>
+    <br>
+    <p>Question 9</p>
+    <img src="images/Screen Shot 2020-09-09 at 6.37.35 am.png" width="50%">
+    <p>Find the probability of getting a total score of:<br>
+      A) 6? 5/36<br>
+      B) 10? 2/36<br>
+      C) 1? 2/36<br>
+      D) 6+? 19/36
+    </p>
+  </center>
+  <center>
+    <h1></h1>
+    <h2>14/9/2020</h2>
+    <p></p>
+  </center>
+</body>
+
+</html>
